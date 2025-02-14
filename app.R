@@ -9,12 +9,12 @@ library(plotly)    # For interactive plots
 # -----------------------
 # 1. Load Final Model
 # -----------------------
-saved_model_path <- "data/final_fg_model.rds"
+saved_model_path <- "final_fg_model.rds"
 final_model <- readRDS(saved_model_path)
 
-mean_cif_data_overall <- readRDS("data/mean_cif_data_all.rds")
-mean_cif_data_pos     <- readRDS("data/mean_cif_data_ORN_positive.rds")
-mean_cif_data_neg     <- readRDS("data/mean_cif_data_ORN_negative.rds")
+mean_cif_data_overall <- readRDS("mean_cif_data_all.rds")
+mean_cif_data_pos     <- readRDS("mean_cif_data_ORN_positive.rds")
+mean_cif_data_neg     <- readRDS("mean_cif_data_ORN_negative.rds")
 
 
 feature_cols <- c("Insurance_Type", "Node", "Periodontal_Grading",
