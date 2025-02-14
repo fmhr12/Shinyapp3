@@ -79,9 +79,9 @@ ui <- fluidPage(
       
       # Use a checkbox group to toggle reference curves:
       checkboxGroupInput("showReference", "Show Reference (Average CIF) Options", 
-                         choices = list("Average Overall" = "overall", 
-                                        "Average ORN Positive" = "pos", 
-                                        "Average ORN Negative" = "neg"),
+                         choices = list("Average Overall in PMCC" = "overall", 
+                                        "Average ORN Positive in PMCC" = "pos", 
+                                        "Average ORN Negative in PMCC" = "neg"),
                          selected = "overall"),
       
       actionButton("predictBtn", "Predict"),
