@@ -31,7 +31,7 @@ feature_cols <- c("Insurance_Type", "Node", "Periodontal_Grading",
 ui <- fluidPage(
   theme = shinytheme("flatly"),
   
-  titlePanel("Fine-Gray Model Prediction"),
+  titlePanel("ORN Prognosis Model"),
   
   sidebarLayout(
     sidebarPanel(
