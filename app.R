@@ -9,16 +9,13 @@ library(plotly)    # For interactive plots
 # -----------------------
 # 1. Load Final Model
 # -----------------------
-saved_model_path <- "/Users/farazparnia/Desktop/ArticleORNJ_Pred/App Model_local2/final_fg_model.rds"
+saved_model_path <- "data/final_fg_model.rds"
 final_model <- readRDS(saved_model_path)
 
-# -----------------------
-# 2. Load the PRECOMPUTED average CIF data (for reference curves)
-# -----------------------
-# Each data.frame should have columns: Time and MeanCIF
-mean_cif_data_overall <- readRDS("/Users/farazparnia/Desktop/ArticleORNJ_Pred/App Model_local2/mean_cif_data_all.rds")
-mean_cif_data_pos     <- readRDS("/Users/farazparnia/Desktop/ArticleORNJ_Pred/App Model_local2/mean_cif_data_ORN_positive.rds")
-mean_cif_data_neg     <- readRDS("/Users/farazparnia/Desktop/ArticleORNJ_Pred/App Model_local2/mean_cif_data_ORN_negative.rds")
+mean_cif_data_overall <- readRDS("data/mean_cif_data_all.rds")
+mean_cif_data_pos     <- readRDS("data/mean_cif_data_ORN_positive.rds")
+mean_cif_data_neg     <- readRDS("data/mean_cif_data_ORN_negative.rds")
+
 
 feature_cols <- c("Insurance_Type", "Node", "Periodontal_Grading",
                   "Disease_Site_Merged_2", "Age", 
