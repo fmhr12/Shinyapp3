@@ -1,5 +1,3 @@
-```{r}
-library(shiny)
 library(shinythemes)
 library(survival)
 library(riskRegression)
@@ -201,5 +199,4 @@ if (interactive()) {
                 port = as.numeric(Sys.getenv("PORT", 10000)))
 }
 
-```
 
